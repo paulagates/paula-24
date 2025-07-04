@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>package main | Paula's Birthday</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+    <div class="floating-gophers">
+        <div class="floating-code" style="top: 10%; left: 10%; animation-delay: 0s;">package main</div>
+        <div class="floating-code" style="top: 20%; left: 80%; animation-delay: 5s;">import "fmt"</div>
+        <div class="floating-code" style="top: 50%; left: 5%; animation-delay: 10s;">func party() {</div>
+        <div class="floating-code" style="top: 70%; left: 90%; animation-delay: 15s;">defer cleanup()</div>
+        <div class="floating-code" style="top: 80%; left: 30%; animation-delay: 8s;">// Go celebrate!</div>
+        <div class="floating-code" style="top: 30%; left: 70%; animation-delay: 12s;">go celebrate()</div>
+        <div class="floating-code" style="top: 60%; left: 15%; animation-delay: 18s;">fmt.Println("🎉")</div>
+        <div class="floating-code" style="top: 40%; left: 85%; animation-delay: 22s;">}</div>
+    </div>
+
+    <section class="hero-section">
+        <div class="container-custom">
+            <div class="hero-content">
+                <div class="go-logo mt-5">
+                    <img class="go-mascot" src="/assets/img/paula-gopher.png">
+                </div>
+                <h1 class="text-center">package birthday</h1>
+                <p class="lead mb-4 text-center">Paula's 24th Birthday Celebration</p>
+                
+                <div class="code-editor">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <div class="code-filename">main.go</div>
+                    </div>
+                    <div class="code-content go-font">
+                        <div class="code-line">
+                            <span class="line-number">1</span>
+                            <span class="go-package">package</span> <span class="go-keyword">main</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">3</span>
+                            <span class="go-package">import</span> (
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">4</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-string">"fmt"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">5</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-string">"time"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">6</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-string">"sync"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">7</span>)
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">8</span>
+                            <span class="go-keyword">type</span> <span class="go-type">Birthday</span> <span class="go-keyword">struct</span> {
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">9</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp; Host <span class="go-type">string</span> <span class="go-comment">// Anfitriã da festa</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">10</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Age <span class="go-type">int</span> <span class="go-comment">// Idade que está comemorando</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">11</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Date <span class="go-type">time.Time</span> <span class="go-comment">// Data e hora do evento</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">12</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;Location <span class="go-type">string</span> <span class="go-comment">// Local do evento</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">13</span>}
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">15</span>
+                            <span class="go-keyword">func</span> (<span class="go-keyword">b</span> <span class="go-type">Birthday</span>) <span class="go-function">Invite</span>() <span class="go-type">string</span> {
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">16</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">return</span> fmt.Sprintf(<span class="go-string">"Você está convidado para a festa da %s, dia %s, em %s! 🎉"</span>,
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">17</span>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.Host, b.Date.Format(<span class="go-string">"02 de Janeiro de 2006 às 15:04"</span>), b.Location)
+                        </div>
+                        <div class="code-line">
+                            <span class="line-number">18</span>}
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-custom">
+            <h2 class="section-title">Event Details</h2>
+            
+            <div class="details-section">
+                <div class="code-editor">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <div class="code-filename">event.go</div>
+                    </div>
+                    <div class="code-content go-font">
+                        <div class="code-line">
+                            <span class="go-keyword">var</span> event = <span class="go-type">Birthday</span>{
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Host: <span class="go-string">"Paula"</span>,
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Age: <span class="go-number">24</span>,
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Date: <span class="go-function">time.Date</span>(<span class="go-number">2025</span>, <span class="go-number">8</span>, <span class="go-number">1</span>, <span class="go-number">19</span>, <span class="go-number">0</span>, <span class="go-number">0</span>, <span class="go-number">0</span>, time.UTC),
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Location: <span class="go-string">"Bravi Pizzaria"</span>,
+                        </div>
+                        <div class="code-line">
+                            }
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="bi bi-calendar-event"></i>
+                        </div>
+                        <h3>Date</h3>
+                        <p class="mb-1">Sexta-feira</p>
+                        <p class="h5 mb-0">1 de Agosto de 2025</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="bi bi-clock"></i>
+                        </div>
+                        <h3>Time</h3>
+                        <p class="mb-1">Início às</p>
+                        <p class="h5 mb-0">19:00</p>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <div class="detail-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p class="mb-1">Encontro na</p>
+                        <p class="h5 mb-0">Bravi Pizzaria</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container-custom">
+            <h2 class="section-title">func RSVP()</h2>
+            
+            <div class="form-container">
+                <div class="code-editor mb-4">
+                    <div class="code-header">
+                        <div class="code-dot red"></div>
+                        <div class="code-dot yellow"></div>
+                        <div class="code-dot green"></div>
+                        <div class="code-filename">rsvp.go</div>
+                    </div>
+                    <div class="code-content go-font">
+                        <div class="code-line">
+                            <span class="go-keyword">type</span> <span class="go-type">Guest</span> <span class="go-keyword">struct</span> {
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Name <span class="go-type">string</span>
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;WillAttend <span class="go-type">bool</span>
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;PartySize <span class="go-type">int</span>
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;Message <span class="go-type">string</span>
+                        </div>
+                        <div class="code-line">
+                            }
+                        </div>
+                        <div class="code-line">
+                            <span class="go-comment">// Por favor, confirme sua presença</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="go-keyword">func</span> <span class="go-function">RSVP</span>(guest <span class="go-type">Guest</span>) <span class="go-type">error</span> {
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">if</span> strings.TrimSpace(guest.Name) == <span class="go-string">""</span> {
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">return</span> errors.New(<span class="go-string">"nome é obrigatório"</span>)
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;}
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">if</span> guest.PartySize <= <span class="go-number">0</span> {
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">return</span> errors.New(<span class="go-string">"precisa confirmar pelo menos uma pessoa"</span>)
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;}
+                        </div>
+                        <div class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">return</span> <span class="go-keyword">nil</span>
+                        </div>
+                        <div class="code-line">
+                            }
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <form id="rsvp-form" >
+                    <div class="mb-4">
+                        <label for="nome" class="form-label">guest.Name</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required placeholder="Digite seu nome completo...">
+                    </div>
+                
+                    <div class="mb-4">
+                        <label class="form-label">guest.WillAttend</label>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="confirmacao" id="vai_sim" value="true" required>
+                            <label class="form-check-label" for="vai_sim">
+                                <i class="bi bi-check-circle text-success me-2"></i>true // Estarei lá! 🎉
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="confirmacao" id="vai_nao" value="false" required>
+                            <label class="form-check-label" for="vai_nao">
+                                <i class="bi bi-x-circle text-danger me-2"></i>false // Não poderei comparecer 😢
+                            </label>
+                        </div>
+                    </div>
+                
+                    <div class="mb-4">
+                        <label for="acompanhantes" class="form-label">guest.PartySize</label>
+                        <select class="form-select" name="total_de_pessoas" id="acompanhantes">
+                            <option value="1">1 // Apenas eu</option>
+                            <option value="2">2 // Eu + acompanhante</option>
+                        </select>
+                        <div class="form-text text-muted">
+                            <i class="bi bi-info-circle me-1"></i>// Ajuda a organizar o espaço
+                        </div>
+                    </div>
+                
+                    <div class="mb-4">
+                        <label for="mensagem" class="form-label">guest.Message</label>
+                        <textarea class="form-control" id="mensagem" name="mensagem" rows="3" placeholder="// Deixe uma mensagem especial..."></textarea>
+                    </div>
+                
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-go btn-lg">
+                            <i class="bi bi-send me-2"></i>go run rsvp.go
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-5">
+        <div class="container-custom">
+            <div class="code-editor mt-4">
+                <div class="code-header">
+                    <div class="code-dot red"></div>
+                    <div class="code-dot yellow"></div>
+                    <div class="code-dot green"></div>
+                    <div class="code-filename">celebration.go</div>
+                </div>
+                <div class="code-content go-font">
+                    <div class="code-line">
+                        <span class="go-keyword">func</span> <span class="go-function">celebrate</span>(wg <span class="go-type">*</span><span class="go-type">sync.WaitGroup</span>) {
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">defer</span> wg.Done()
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;fmt.Println(<span class="go-string">"Festa começou! 🎉"</span>)
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;time.Sleep(<span class="go-number">1</span> * time.Second)
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;fmt.Println(<span class="go-string">"Festa rolando... 🎶"</span>)
+                    </div>
+                    <div class="code-line">
+                        }
+                    </div>
+                </div>
+            </div>
+            
+            <div class="code-editor">
+                <div class="code-header">
+                    <div class="code-dot red"></div>
+                    <div class="code-dot yellow"></div>
+                    <div class="code-dot green"></div>
+                    <div class="code-filename">main.go</div>
+                </div>
+                <div class="code-content go-font">
+                    <div class="code-line">
+                        <span class="go-keyword">func</span> <span class="go-function">main</span>() {
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;fmt.Println(<span class="go-string">"Mal posso esperar! 🚀"</span>)
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">defer</span> fmt.Println(<span class="go-string">"Obrigada por vir! 💖"</span>)
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">var</span> wg <span class="go-type">sync.WaitGroup</span>
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;wg.Add(<span class="go-number">1</span>)
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="go-keyword">go</span> celebrate(&wg)
+                    </div>
+                    <div class="code-line">
+                        &nbsp;&nbsp;&nbsp;&nbsp;wg.Wait()
+                    </div>
+                    <div class="code-line">
+                        }
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDc1ERo0BZlK" crossorigin="anonymous"></script>
+    <script src="/birthday.js"></script>
+</body>
+</html>
